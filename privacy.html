@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سياسة الخصوصية — No Forgott</title>
+<style>
+  :root { --bg:#0e1621; --card:#16212f; --text:#e8eef5; --muted:#9fb0c1; --accent:#34c759; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif; background:var(--bg); color:var(--text); line-height:1.9; }
+  .wrap { max-width:820px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { color:var(--accent); font-size:26px; margin:0 0 6px; }
+  .lang-toggle { display:inline-block; margin:10px 0 24px; cursor:pointer; color:var(--accent); background:rgba(52,199,89,.1); border:1px solid rgba(52,199,89,.4); padding:6px 14px; border-radius:20px; font-size:13px; }
+  h2 { font-size:18px; margin:26px 0 10px; color:var(--accent); }
+  p, li { color:var(--text); font-size:15px; }
+  .muted { color:var(--muted); font-size:13px; }
+  .card { background:var(--card); border:1px solid #1f2d3d; border-radius:14px; padding:16px 18px; margin-bottom:14px; }
+  .en { display:none; }
+  html:lang(en) .ar { display:none; }
+  html:lang(en) .en { display:block; }
+  a { color:var(--accent); }
+  .updated { color:var(--muted); font-size:13px; margin-top:36px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>سياسة الخصوصية · No Forgott</h1>
+  <div class="muted">آخر تحديث: <span id="date"></span></div>
+  <div class="lang-toggle" onclick="toggleLang(this)" >English</div>
+
+  <!-- ============ ARABIC ============ -->
+  <div class="ar">
+    <div class="card">
+      <h2>ملخص سريع</h2>
+      <ul>
+        <li>بياناتك المالية تُحفظ <b>على جهازك فقط</b> ولا تُرفع لأي خادم خارجي.</li>
+        <li>لا نبيع بياناتك ولا نشاركها مع أي طرف ثالث.</li>
+        <li>لا نستخدم إعلانات طرف ثالث ولا أدوات تتبع لسلوكك.</li>
+        <li>الاشتراك المدفوع يُدار عبر نظام Apple الرسمي (StoreKit).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>١. البيانات التي نعالجها</h2>
+      <p>يخزّن التطبيق محلياً على جهازك فقط:</p>
+      <ul>
+        <li>بياناتك المالية: الرصيد، المصروفات، الدخل، الديون (عليك وعليك)، القروض، خطط التوفير، تداولاتك وإعدادات الراتب.</li>
+        <li>إعدادات التفضيلات وحالة الاشتراك التجريبي.</li>
+        <li>إحصائيات استخدام داخلية بسيطة (مثل عدد الجلسات) لغرض تحسين التطبيق — بدون أي بيانات شخصية.</li>
+        <li>عند تفعيل المزامنة (اختياري): تُرسل نسخة من بياناتك إلى خادمك الشخصي بموافقتك، ولا تُخزّن إلا ما هو ضروري للمزامنة.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>٢. أماكن الحفظ</h2>
+      <ul>
+        <li>الحفظ الأساسي في ذاكرة الجهاز عبر <b>UserDefaults</b> (نفسها تقريباً لكل تطبيقات نظام iOS).</li>
+        <li>المعَرّضات المحلية لعناصر مثل علامات التطبيق.</li>
+        <li>بيانات الاشتراكات تُدار من الهيئة مالية بالكامل عبر <b>Apple / App Store</b> وليست لدينا أياً منها: Apple تتعامل معها.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>٣. الاشتراكات والدفع</h2>
+      <p>المدفوعات تتم عبر <b>App Store (StoreKit)</b> — لا نستقبل بيانات بطاقاتك أبداً ولا نحتفظ بها. التجديد التلقائي والاسترداد تخضع لسياسة Apple.</p>
+    </div>
+
+    <div class="card">
+      <h2>٤. الرفع إلى السحاب</h2>
+      <p>تكون المزامنة (Migration) خيارك الطوعي. إذا فعّلتها تُرسل بياناتك إلى خادم تحكمه أنت وفق إعداداتك، وتُخزّن بشكل آمن ولا تُستخدم لأي غرض آخر سوى مطابقة النسخة على أجهزتك.</p>
+    </div>
+
+    <div class="card">
+      <h2>٥. حذف بياناتك</h2>
+      <p>يمكنك حذف كل بيانات التطبيق من الإعدادات (حذف البيانات) أو بحذف التطبيق من جهازك. الحذف نهائي ولا نستطيع استرجاعه.</p>
+    </div>
+
+    <div class="card">
+      <h2>٦. الأمان</h2>
+      <p>كل عمليات التخزين تكون داخل البيئة الآمنة للنظام. لا نجمع IP أو موقعك الجغرافي أو جهاز التعريفات.</p>
+    </div>
+
+    <div class="card">
+      <h2>٧. التواصل</h2>
+      <p>لأي استفسار أو طلب حذف: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+    </div>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div class="en">
+    <div class="card">
+      <h2>Short version</h2>
+      <ul>
+        <li>Your financial data is stored <b>on your device only</b>.</li>
+        <li>We never sell or share your data with third parties.</li>
+        <li>No third-party ads or tracking.</li>
+        <li>Payments are processed by Apple via StoreKit.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>1. Data we handle</h2>
+      <p>Stored locally on your device:</p>
+      <ul>
+        <li>Financial data: balance, expenses, income, debts, loans, savings plans, your trades &amp; salary settings.</li>
+        <li>Preferences and trial status.</li>
+        <li>Simple internal usage counters (e.g. session count) for improving the app — no personal data.</li>
+        <li>Optional sync: if enabled, a copy of your data is sent to your own server for syncing; nothing is stored beyond what is needed.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>2. Where data lives</h2>
+      <ul>
+        <li>Stored locally via iOS UserDefaults.</li>
+        <li>Local widget app group data.</li>
+        <li>Subscriptions are managed entirely by Apple / App Store.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>3. Payments</h2>
+      <p>All payments go through the App Store (StoreKit). We never see or store your card details. Renewals and refunds are governed by Apple's policies.</p>
+    </div>
+    <div class="card">
+      <h2>4. Sync</h2>
+      <p>Cloud sync is completely optional. If enabled, data is sent to a server that you control, stored securely, and used only to keep your own devices in sync.</p>
+    </div>
+    <div class="card">
+      <h2>5. Deletion</h2>
+      <p>You can delete all app data from Settings, or simply delete the app. Deletion is permanent and cannot be undone.</p>
+    </div>
+    <div class="card">
+      <h2>6. Security &amp; Analytics</h2>
+      <p>All storage stays within iOS's sandbox. We do not collect IP addresses, location, or device identifiers.</p>
+    </div>
+    <div class="card">
+      <h2>7. Contact</h2>
+      <p>Questions or deletion requests: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+    </div>
+  </div>
+
+  <div class="updated">© <span id="year"></span> No Forgott</div>
+</div>
+<script>
+  document.getElementById("date").textContent = new Date().toLocaleDateString("ar-SA");
+  document.getElementById("year").textContent = new Date().getFullYear();
+  function toggleLang(el){
+    var ar = document.documentElement.dir === "rtl";
+    if (ar) { document.documentElement.dir = "ltr"; document.documentElement.lang = "en"; el.textContent = "العربية"; }
+    else { document.documentElement.dir = "rtl"; document.documentElement.lang = "ar"; el.textContent = "English"; }
+  }
+</script>
+</body>
+</html>
